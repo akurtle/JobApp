@@ -7,18 +7,10 @@ Job app created using React native, rapid API for searching, and expo router to 
 - Install the dependencies using npm i 
 
 - Use `npm run android` to run directly using npm
-
+  
+- Make sure to have [Android studio installed](https://developer.android.com/studio?gclid=CjwKCAiAmZGrBhAnEiwAo9qHidWsxYS9IX0b4QtaPJHI3YjgQ8TswdUS6jwaNkbF7hZnckordZXSoRoC0-AQAvD_BwE&gclsrc=aw.ds)
 
 To run using expo-router follow the below:
-# Expo Router Example
-
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
-
-## 🚀 How to use
-
-```sh
-npx create-expo-app -e with-router
-```
 
 ## 📝 Notes
 

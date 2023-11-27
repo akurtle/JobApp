@@ -2,6 +2,8 @@
 
 Job app created using React native, rapid API for searching, and expo router to route the app.
 
+It is used to search for jobs across the internet!
+
 # To run 
 
 - Install the dependencies using npm i 

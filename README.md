@@ -12,4 +12,6 @@ Job app created using React native, rapid API for searching, and expo router to 
 
 ## To run using expo-router follow the below:
 
+- Make sure to install [expo-cli](https://docs.expo.dev/more/expo-cli/) before running expo commands
+
 - Use `expo start --android` 

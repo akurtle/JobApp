@@ -8,9 +8,8 @@ Job app created using React native, rapid API for searching, and expo router to 
 
 - Use `npm run android` to run directly using npm
 
-- To run using expo follow the below:
 
-
+To run using expo-router follow the below:
 # Expo Router Example
 
 Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.

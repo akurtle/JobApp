@@ -17,11 +17,7 @@ Whether you're applying for internships, part-time gigs, or full-time roles, kee
 
 ## 🛠️ Tech Stack
 
-This project is built with:
-
-- **Frontend**: [Your framework or language, e.g., React, Flutter]
-- **Backend**: [e.g., Node.js, Firebase, Python Flask, etc.]
-- **Database**: [e.g., MongoDB, Supabase, SQLite, etc.]
+This project is built with React Native
 
 > _Customize this section based on your actual stack!_
 

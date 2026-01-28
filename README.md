@@ -19,8 +19,6 @@ Whether you're applying for internships, part-time gigs, or full-time roles, kee
 
 This project is built with React Native
 
-> _Customize this section based on your actual stack!_
-
 ---
 
 ## 📦 Installation
@@ -34,7 +32,9 @@ git clone https://github.com/akurtle/JobApp.git
 # Navigate into the directory
 cd JobApp
 
+# Install the dependencies
 
+npm install
 
 # Run the app
 npx expo app

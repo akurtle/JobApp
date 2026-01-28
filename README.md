@@ -34,8 +34,7 @@ git clone https://github.com/akurtle/JobApp.git
 # Navigate into the directory
 cd JobApp
 
-# Install dependencies
-[insert your install command, e.g., npm install]
+
 
 # Run the app
-[insert your run command, e.g., npm start]
+npx expo app

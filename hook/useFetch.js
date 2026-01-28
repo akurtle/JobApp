@@ -1,8 +1,10 @@
 import {useState,useEffect} from 'react'
-
 import axios from 'axios';
 
-
+const rapidApiKey = process.env.EXPO_PUBLIC_RAPIDAPI_KEY
+if (!rapidApiKey) {
+    console.warn('Missing EXPO_PUBLIC_RAPIDAPI_KEY. Set it in a .env file and restart Expo.')
+}
 
 const useFetch = (endpoint,query) =>{
 
@@ -18,7 +20,7 @@ const useFetch = (endpoint,query) =>{
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     params: {...query},
     headers: {
-        'X-RapidAPI-Key': '2d71cf9107mshdfc59fe40205b6fp136a79jsn12c2855c0235',
+        'X-RapidAPI-Key': rapidApiKey,
         'X-RapidAPI-Host':'jsearch.p.rapidapi.com'
     },
     

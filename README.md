@@ -1,41 +1,62 @@
-# 💼 JobApp
+# JobApp
 
-Welcome to **JobApp** – a simple and efficient tool to help you manage and track your job applications! 🚀
+JobApp is a mobile job discovery app built with React Native and Expo. It lets you
+search for roles, browse popular and nearby listings, and view job details from a
+remote API.
 
-Whether you're applying for internships, part-time gigs, or full-time roles, keeping everything organized can be tough. JobApp is here to help you stay on top of your job hunt like a pro.
+## Features
+- Keyword search with pagination
+- Popular and nearby job lists
+- Job detail view
+- Drawer navigation with custom headers
 
----
+## Tech Stack
+- Expo 54 + React Native 0.81
+- Expo Router + React Navigation Drawer
+- Axios
+- RapidAPI JSearch API
 
-## 🧠 Features
+## Getting Started
 
-- 📋 Track job applications with key details
-- 🏷️ Organize by status (Applied, Interviewing, Offer, Rejected, etc.)
-- 🕒 Keep timestamps for when you applied
-- 💡 Stay focused on your goals and progress
+### Prerequisites
+- Node.js (LTS recommended)
+- npm or yarn
+- Expo Go app (for running on a device)
 
----
-
-## 🛠️ Tech Stack
-
-This project is built with React Native
-
-> _Customize this section based on your actual stack!_
-
----
-
-## 📦 Installation
-
-To run this project locally:
-
+### Install
 ```bash
-# Clone the repo
-git clone https://github.com/akurtle/JobApp.git
+npm install
+```
 
-# Navigate into the directory
-cd JobApp
+### Run
+```bash
+npm run start
+npm run android
+npm run ios
+npm run web
+```
 
-# Install dependencies
-[insert your install command, e.g., npm install]
+## API Key Setup
+This project uses the RapidAPI JSearch API. The key is currently hardcoded in:
+- `hook/useFetch.js`
+- `app/search/[id].js`
 
-# Run the app
-[insert your run command, e.g., npm start]
+Recommended: move the key to an Expo environment variable.
+
+Example:
+1. Create a `.env` file with:
+   `EXPO_PUBLIC_RAPIDAPI_KEY=your_key_here`
+2. Update the headers to use `process.env.EXPO_PUBLIC_RAPIDAPI_KEY`
+3. Restart Expo with `npm run start`
+
+## Project Structure
+- `app/` - routes and screens (expo-router)
+- `components/` - reusable UI components
+- `constants/` - theme, icons, images
+- `hook/` - custom hooks (data fetching)
+- `styles/` - screen styles
+- `assets/` - static assets
+
+## Notes
+- API provider: RapidAPI JSearch.
+- If caching causes issues, run `npx expo start -c`.

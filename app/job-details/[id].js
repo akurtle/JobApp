@@ -1,10 +1,12 @@
 import {
 Text,
 View,
-SafeAreaView,
 ScrollView,
 ActivityIndicator,
 RefreshControl} from 'react-native'
+
+import {SafeAreaView} from 'react-native-safe-area-context'
+
 
 import {Stack,useRouter,useGlobalSearchParams} from "expo-router"
 

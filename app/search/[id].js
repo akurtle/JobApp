@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { ActivityIndicator, FlatList, Image, TouchableOpacity, View } from 'react-native'
 import { Stack, useRouter, useGlobalSearchParams } from 'expo-router'
-import { Text, SafeAreaView } from 'react-native'
+import { Text} from 'react-native'
+import {SafeAreaView} from 'react-native-safe-area-context'
 import axios from 'axios'
+
+const rapidApiKey = process.env.EXPO_PUBLIC_RAPIDAPI_KEY
+if (!rapidApiKey) {
+    console.warn('Missing EXPO_PUBLIC_RAPIDAPI_KEY. Set it in a .env file and restart Expo.')
+}
 
 import { ScreenHeaderBtn, NearbyJobCard } from '../../components'
 import { COLORS, icons, SIZES } from '../../constants'
@@ -27,7 +33,7 @@ const JobSearch = () => {
                 method: "GET",
                 url: `https://jsearch.p.rapidapi.com/search`,
                 headers: {
-                    "X-RapidAPI-Key": '2d71cf9107mshdfc59fe40205b6fp136a79jsn12c2855c0235',
+                    "X-RapidAPI-Key": rapidApiKey,
                     "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
                 },
                 params: {
